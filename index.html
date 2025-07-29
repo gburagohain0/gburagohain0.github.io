@@ -3,34 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SevaAssam.in | CSC Digital Services</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>GYANJYOTI CSC - Cyber Cafe</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0; padding: 0;
+      background: #f0f2f5;
+    }
+    header {
+      background: #005f99;
+      color: white;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 50px;
+    }
+    .lang {
+      font-size: 14px;
+    }
+    h1 {
+      margin: 0;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background: #003355;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    .contact {
+      padding: 20px;
+      background: #e9f7fc;
+      text-align: center;
+    }
+    .contact input, .contact textarea {
+      padding: 10px;
+      margin: 5px;
+      width: 80%;
+      max-width: 400px;
+    }
+    button {
+      padding: 10px 20px;
+      background: #005f99;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <img src="logo.png" alt="SevaAssam Logo" style="height: 60px;">
-    <h1>SevaAssam.in</h1>
-    <p>Your Trusted Digital Seva Kendra</p>
+    <div>
+      <img src="logo.png" alt="Logo">
+      <h1>GYANJYOTI CSC</h1>
+    </div>
+    <div class="lang">অসমীয়া / English</div>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Our Services</a></li>
-      <li><a href="form.html">Apply Now</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <section class="services">
+    <div class="card">
+      <h3>e-District Forms</h3>
+      <p>Income, Caste, Domicile, etc.</p>
+    </div>
+    <div class="card">
+      <h3>PAN Services</h3>
+      <p>Apply, Correction, Reprint</p>
+    </div>
+    <div class="card">
+      <h3>Insurance</h3>
+      <p>Life & GI (PMJJBY, PMSBY, etc.)</p>
+    </div>
+    <div class="card">
+      <h3>Online Exam Form</h3>
+      <p>Apply with photo upload</p>
+    </div>
+    <div class="card">
+      <h3>Print & Scan</h3>
+      <p>Quick Document Services</p>
+    </div>
+  </section>
 
-  <main>
-    <section>
-      <h2>Welcome to GYANJYOTI CSC</h2>
-      <p>We offer Assam-based CSC services like form filling, insurance, printing, scanning, and more – in Assamese and English.</p>
-    </section>
-  </main>
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <input type="text" placeholder="Your Name"><br>
+    <input type="email" placeholder="Email"><br>
+    <textarea rows="4" placeholder="Your Message"></textarea><br>
+    <button>Send</button>
+  </section>
 
   <footer>
-    <p>&copy; 2025 SevaAssam.in | Powered by GYANJYOTI CSC</p>
+    &copy; 2025 GYANJYOTI CSC - Cyber Cafe | sevaassam.in
   </footer>
+
 </body>
 </html>
